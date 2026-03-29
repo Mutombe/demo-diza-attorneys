@@ -206,7 +206,7 @@ const siteData = {
   reviews: {
     heroTitle: [{ text: "Client " }, { text: "Testimonials", highlight: true }],
     heroSubtitle: "Real feedback from individuals and organizations who trust Diza Attorneys with their most important legal matters.",
-    ratingBreakdown: [{ stars: 5, count: 19 }, { stars: 4, count: 7 }, { stars: 3, count: 2 }, { stars: 2, count: 0 }, { stars: 1, count: 0 }],
+    ratingBreakdown: { 5: 19, 4: 7, 3: 2, 2: 0, 1: 0 },
     items: [
       { name: "Tendai Chirwa", role: "CEO, Masimba Holdings", text: "Diza Attorneys handled our complex M&A transaction flawlessly. Their corporate law expertise and attention to detail saved us from potential liabilities worth millions. True strategic partners.", rating: 5, date: "1 month ago", project: "Mergers & Acquisitions" },
       { name: "Grace Nyoni", role: "Property Developer", text: "Every property transfer I handle goes through Diza. They are thorough, fast, and their conveyancing team never misses a deadline. Over 100 transfers completed without a single issue.", rating: 5, date: "2 months ago", project: "Conveyancing" },
