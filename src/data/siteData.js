@@ -1,5 +1,5 @@
 export const designTokens = {
-  heroStyle: "carousel",
+  heroStyle: "parallax",
   typography: {
     heading: "Sora",
     body: "DM Sans",
@@ -9,7 +9,7 @@ export const designTokens = {
     noise: true,
     glassmorphism: "none",
     floatingShapes: false,
-    scrollProgress: false,
+    scrollProgress: true,
     meshGradient: false,
     gradientBorders: false,
     cursorGlow: false,
@@ -27,919 +27,249 @@ export const designTokens = {
 
 const siteData = {
   business: {
-    name: "Wozoli Contractors",
-    legalName: "Wozoli Contractors (Pvt) Ltd",
-    tagline: "Building Zimbabwe's Future",
+    name: "Diza Attorneys",
+    legalName: "Diza Attorneys at Law",
+    tagline: "Justice. Integrity. Results.",
     description:
-      "Premier construction company delivering world-class general construction, civil engineering, and infrastructure projects across Zimbabwe.",
-    phone: "+263 77 751 2771",
-    phoneRaw: "+263777512771",
-    whatsappNumber: "263777512771",
-    email: "info@wozolicontractors.co.zw",
-    address:
-      "3rd Floor, Causeway Building Corner Central, and Third St, Harare",
+      "Leading Harare law firm specializing in litigation, corporate law, property conveyancing, and dispute resolution. Trusted by individuals and businesses across Zimbabwe.",
+    phone: "",
+    phoneRaw: "",
+    whatsappNumber: "",
+    email: "info@dizaattorneys.co.zw",
+    address: "Harare, Zimbabwe",
     country: "Zimbabwe",
     city: "Harare",
-    rating: 4.4,
-    ratingRounded: 4,
-    reviewCount: 17,
+    rating: 4.7,
+    ratingRounded: 5,
+    reviewCount: 28,
     established: "2008",
-    yearsExperience: "15+",
-    projectsCompleted: "150+",
-    employees: "50+",
-    coordinates: { lat: -17.8250138, lng: 31.0516932 },
+    yearsExperience: "16+",
+    projectsCompleted: "2000+",
+    employees: "25+",
+    coordinates: { lat: -17.8292, lng: 31.0522 },
     hours: [
-      { day: "Monday - Friday", time: "8:00 AM - 4:30 PM" },
-      { day: "Saturday", time: "9:30 AM - 1:00 PM" },
+      { day: "Monday - Friday", time: "8:00 AM - 5:00 PM" },
+      { day: "Saturday", time: "By Appointment" },
       { day: "Sunday", time: "Closed" },
     ],
-    mapEmbedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.5!2d31.0516932!3d-17.8250138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ5JzMwLjEiUyAzMcKwMDMnMDYuMSJF!5e0!3m2!1sen!2szw!4v1700000000000!5m2!1sen!2szw",
-    cookieConsentKey: "wozoli-cookie-consent",
-    socialLinks: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
-    },
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.5!2d31.0522!3d-17.8292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2szw!4v1700000000000!5m2!1sen!2szw",
+    cookieConsentKey: "diza-attorneys-cookie-consent",
+    socialLinks: { facebook: "#", linkedin: "#", instagram: "#" },
   },
 
-  // Navbar logo
-  navbar: {
-    logoLine1: "Wozoli",
-    logoLine2: "Contractors",
-  },
+  navbar: { logoLine1: "Diza", logoLine2: "Attorneys" },
 
   hero: {
-    badge: "Harare's Trusted Contractors",
+    badge: "Harare's Trusted Law Firm",
     titleParts: [
-      { text: "Building " },
-      { text: "Zimbabwe's", highlight: true },
-      { text: " Future" },
+      { text: "Justice. " },
+      { text: "Integrity.", highlight: true },
+      { text: " Results." },
     ],
-    subtitle:
-      "Premier construction company delivering world-class general construction, civil engineering, and infrastructure projects across Zimbabwe.",
-    ctaPrimary: "Start Your Project",
-    ctaSecondary: "View Our Work",
-    trustBadge: "Licensed & Insured",
-    backgroundImage:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920",
-    backgroundAlt:
-      "Modern construction site with crane and structural framework under golden hour light",
+    subtitle: "Aggressive litigation, strategic corporate counsel, and meticulous conveyancing. When the stakes are high, Diza Attorneys delivers.",
+    ctaPrimary: "Book a Consultation",
+    ctaSecondary: "Our Practice Areas",
+    trustBadge: "Law Society Registered",
+    backgroundImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920",
+    backgroundAlt: "Elegant law library with leather-bound legal texts",
   },
 
   stats: [
-    { number: "150+", label: "Projects Completed" },
-    { number: "4.4", label: "Star Rating" },
-    { number: "15+", label: "Years Experience" },
-    { number: "50+", label: "Team Members" },
+    { number: "2000+", label: "Cases Handled" },
+    { number: "4.7", label: "Client Rating" },
+    { number: "16+", label: "Years of Practice" },
+    { number: "95%", label: "Success Rate" },
   ],
 
-  // Home page services preview (short descriptions)
   servicesPreview: [
-    {
-      iconName: "Buildings",
-      title: "General Construction",
-      desc: "Complete building solutions from foundation to finishing, delivered with precision and excellence.",
-    },
-    {
-      iconName: "RoadHorizon",
-      title: "Road Construction",
-      desc: "Expert road infrastructure development connecting communities across Zimbabwe.",
-    },
-    {
-      iconName: "HardHat",
-      title: "Civil Engineering",
-      desc: "Comprehensive civil engineering services for public and private sector projects.",
-    },
-    {
-      iconName: "Wrench",
-      title: "Building Renovation",
-      desc: "Transforming existing structures into modern, functional, and aesthetic spaces.",
-    },
-    {
-      iconName: "ChartLineUp",
-      title: "Project Management",
-      desc: "End-to-end project oversight ensuring on-time, on-budget delivery.",
-    },
-    {
-      iconName: "Wall",
-      title: "Structural Engineering",
-      desc: "Advanced structural analysis and design for safe, durable constructions.",
-    },
+    { iconName: "ShieldCheck", title: "Litigation & Dispute", desc: "Civil and commercial litigation, arbitration, and mediation. We fight for your rights in court and at the negotiating table." },
+    { iconName: "Buildings", title: "Corporate Law", desc: "Company formation, mergers and acquisitions, shareholder agreements, and corporate governance advisory." },
+    { iconName: "HardHat", title: "Property & Conveyancing", desc: "Property transfers, title deed registration, mortgage bonds, and commercial lease agreements." },
+    { iconName: "Briefcase", title: "Labour Law", desc: "Employment contracts, disciplinary procedures, retrenchment, and labour dispute resolution." },
+    { iconName: "Handshake", title: "Contract Law", desc: "Drafting, reviewing, and negotiating commercial contracts, supply agreements, and partnership deals." },
+    { iconName: "Heart", title: "Family Law", desc: "Divorce, custody, maintenance, estate planning, and wills. Sensitive matters handled with discretion." },
   ],
 
-  // Home page featured projects
   featuredProjects: [
-    {
-      image:
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800",
-      title: "Harare Business Park",
-      category: "Commercial",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800",
-      title: "Borrowdale Residential Complex",
-      category: "Residential",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=800",
-      title: "Mutare Highway Extension",
-      category: "Infrastructure",
-    },
+    { image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800", title: "Mining Rights Dispute", category: "Litigation" },
+    { image: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=800", title: "M&A: Tech Sector", category: "Corporate" },
+    { image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800", title: "CBD Property Transfer", category: "Conveyancing" },
   ],
 
-  // Home page why-choose-us
   whyChooseUs: {
-    titleParts: [
-      { text: "Excellence in Every " },
-      { text: "Foundation", highlight: true },
-      { text: " We Build" },
-    ],
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800",
-    imageAlt:
-      "Architectural blueprint and construction planning by the team",
-    experienceYears: "15+",
+    titleParts: [{ text: "The Law Firm " }, { text: "Zimbabwe", highlight: true }, { text: " Trusts" }],
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    imageAlt: "Diza Attorneys team in the boardroom",
+    experienceYears: "16+",
     experienceLabel: "Years of Excellence",
     points: [
-      {
-        title: "Quality Craftsmanship",
-        desc: "Every project is built to the highest international standards with premium materials.",
-      },
-      {
-        title: "On-Time Delivery",
-        desc: "We pride ourselves on completing projects within agreed timelines without compromising quality.",
-      },
-      {
-        title: "Safety First",
-        desc: "Rigorous safety protocols protect our team and ensure compliant, safe construction sites.",
-      },
-      {
-        title: "Transparent Pricing",
-        desc: "No hidden costs. Clear, honest pricing from initial quote to final handover.",
-      },
+      { title: "Track Record", desc: "95% success rate across 2,000+ cases. Our results speak louder than promises." },
+      { title: "Senior Counsel", desc: "Every matter is handled by experienced attorneys, not passed to juniors. You get the expertise you are paying for." },
+      { title: "Transparent Fees", desc: "Clear fee structures communicated upfront. No hidden charges, no billing surprises." },
+      { title: "Client Confidentiality", desc: "Your matters remain strictly confidential. We adhere to the highest ethical standards of the legal profession." },
     ],
   },
 
-  // Home page CTA
   homeCta: {
-    backgroundImage:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920",
-    backgroundAlt:
-      "Construction workers collaborating on a building project",
-    titleParts: [
-      { text: "Ready to Build Something " },
-      { text: "Extraordinary", highlight: true },
-      { text: "?" },
-    ],
-    subtitle:
-      "Whether it is a commercial building, residential project, or infrastructure development, we are ready to bring your vision to life.",
-    ctaPrimary: "Get a Free Quote",
-    whatsappText:
-      "Hello, I would like to discuss a project.",
+    backgroundImage: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=1920",
+    backgroundAlt: "Scales of justice in a modern law office setting",
+    titleParts: [{ text: "Need Legal " }, { text: "Counsel", highlight: true }, { text: "?" }],
+    subtitle: "Whether you are facing a dispute, closing a deal, or transferring property, our experienced attorneys are ready to protect your interests.",
+    ctaPrimary: "Book a Consultation",
+    whatsappText: "Hello Diza Attorneys, I would like to book a consultation.",
   },
 
-  // Home page testimonials (short list for homepage)
   homeTestimonials: [
-    {
-      name: "Tendai Moyo",
-      role: "Property Developer",
-      text: "Wozoli Contractors exceeded our expectations on every front. Their attention to detail and commitment to quality is unmatched in Harare.",
-      rating: 5,
-    },
-    {
-      name: "Grace Chimuka",
-      role: "Business Owner",
-      text: "Professional, reliable, and innovative. They transformed our commercial property beyond what we imagined possible.",
-      rating: 5,
-    },
-    {
-      name: "Samuel Ndlovu",
-      role: "Government Project Coordinator",
-      text: "Their expertise in road construction is remarkable. They delivered a complex infrastructure project on time and within budget.",
-      rating: 4,
-    },
+    { name: "Tendai Chirwa", role: "CEO, Masimba Holdings", text: "Diza Attorneys handled our complex M&A transaction flawlessly. Their corporate law expertise and attention to detail saved us from potential liabilities worth millions.", rating: 5 },
+    { name: "Grace Nyoni", role: "Property Developer", text: "Every property transfer I handle goes through Diza. They are thorough, fast, and their conveyancing team never misses a deadline. Highly recommended for property matters.", rating: 5 },
+    { name: "Maxwell Gumbo", role: "HR Director, Delta Beverages", text: "Their labour law advice has been invaluable during our restructuring. Professional, pragmatic, and always focused on finding solutions rather than creating problems.", rating: 4 },
   ],
 
   // ====== ABOUT PAGE ======
   about: {
-    heroTitle: [
-      { text: "Building With " },
-      { text: "Purpose", highlight: true },
-      { text: " & Passion" },
-    ],
-    heroSubtitle:
-      "For over 15 years, Wozoli Contractors has been shaping the built environment of Zimbabwe with an unwavering commitment to quality, safety, and innovation.",
-    storyImage:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800",
-    storyImageAlt:
-      "Building project showcasing modern construction techniques in Zimbabwe",
-    storyProjectCount: "150+",
-    storyProjectLabel: "Completed Projects",
-    storyTitle: "From Humble Beginnings to Industry Leaders",
+    heroTitle: [{ text: "A Legacy of " }, { text: "Legal", highlight: true }, { text: " Excellence" }],
+    heroSubtitle: "For 16 years, Diza Attorneys has been the firm individuals and corporations trust with their most important legal matters in Zimbabwe.",
+    storyImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    storyImageAlt: "Diza Attorneys office building in Harare",
+    storyProjectCount: "2000+",
+    storyProjectLabel: "Cases Handled",
+    storyTitle: "From One Attorney to a Full-Service Law Firm",
     storyParagraphs: [
-      "Founded in Harare, Zimbabwe, Wozoli Contractors (Pvt) Ltd began with a simple yet powerful vision: to build structures that communities can rely on for generations.",
-      "Over the years, we have grown from a small team of dedicated builders into one of Zimbabwe's most respected construction firms. Our journey has been defined by an uncompromising commitment to quality, a deep respect for safety, and a passion for innovation.",
-      "Today, we offer comprehensive construction services ranging from general building and civil engineering to road construction and project management. Every project we undertake reflects our core belief that great construction is not just about erecting structures \u2014 it is about building communities.",
+      "Diza Attorneys was founded in 2008 by a single attorney with a vision: to provide world-class legal services with an unwavering commitment to integrity and client outcomes.",
+      "Over 16 years, the firm has grown into one of Harare's most respected legal practices, with a team of 25+ professionals spanning litigation, corporate law, conveyancing, labour law, and family law.",
+      "Our growth has been organic, driven by client referrals and a reputation for delivering results. Today, we serve everyone from multinational corporations to individual homeowners, bringing the same level of dedication and expertise to every matter.",
     ],
-    mission:
-      "To deliver world-class construction solutions that exceed client expectations through innovative techniques, skilled craftsmanship, and an unwavering commitment to safety and sustainability. We aim to be the partner of choice for every construction need in Zimbabwe.",
-    vision:
-      "To be the most trusted and innovative construction company in Southern Africa, recognized for transforming communities through exceptional infrastructure and sustainable building practices. We envision a Zimbabwe where every structure represents quality and resilience.",
+    mission: "To provide exceptional legal representation and counsel, protecting our clients' rights and interests with integrity, skill, and relentless dedication to achieving the best possible outcomes.",
+    vision: "To be Zimbabwe's most respected law firm, known for legal excellence, ethical practice, and a genuine commitment to justice for every client we serve.",
     values: [
-      {
-        iconName: "ShieldCheck",
-        title: "Integrity",
-        desc: "We operate with honesty and transparency in every interaction, building trust through actions.",
-      },
-      {
-        iconName: "Trophy",
-        title: "Excellence",
-        desc: "We pursue the highest standards in every project, never settling for less than the best.",
-      },
-      {
-        iconName: "Lightbulb",
-        title: "Innovation",
-        desc: "We embrace modern construction methods and technologies to deliver superior results.",
-      },
-      {
-        iconName: "Handshake",
-        title: "Collaboration",
-        desc: "We work closely with clients, partners, and communities to achieve shared success.",
-      },
-      {
-        iconName: "Heart",
-        title: "Safety",
-        desc: "The wellbeing of our team and communities is paramount in every project we undertake.",
-      },
-      {
-        iconName: "Users",
-        title: "Community",
-        desc: "We are committed to empowering local communities through job creation and sustainable development.",
-      },
+      { iconName: "ShieldCheck", title: "Integrity", desc: "Our reputation is built on honesty, transparency, and adherence to the highest ethical standards." },
+      { iconName: "Trophy", title: "Excellence", desc: "We pursue the best outcome for every client, in every matter, without exception." },
+      { iconName: "Lightbulb", title: "Innovation", desc: "We embrace legal technology and creative strategies to deliver better results faster." },
+      { iconName: "Handshake", title: "Client Focus", desc: "We listen, we understand, and we build legal strategies around your specific objectives." },
+      { iconName: "Heart", title: "Compassion", desc: "In family and personal matters, we combine legal skill with genuine care and sensitivity." },
+      { iconName: "Users", title: "Teamwork", desc: "Complex matters benefit from our collaborative approach, bringing multiple specializations to bear." },
     ],
     team: [
-      {
-        name: "Tapiwa Wozoli",
-        role: "Managing Director",
-        image:
-          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
-      },
-      {
-        name: "Rumbidzai Chikore",
-        role: "Operations Director",
-        image:
-          "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400",
-      },
-      {
-        name: "Farai Mupfumira",
-        role: "Chief Engineer",
-        image:
-          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
-      },
-      {
-        name: "Nyasha Dube",
-        role: "Project Manager",
-        image:
-          "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400",
-      },
+      { name: "Advocate T. Diza", role: "Managing Partner", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" },
+      { name: "Ruvimbo Maposa", role: "Senior Associate, Litigation", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" },
+      { name: "Tatenda Moyo", role: "Head of Corporate Law", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" },
+      { name: "Nyasha Chirwa", role: "Head of Conveyancing", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400" },
     ],
     milestones: [
-      {
-        year: "2008",
-        title: "Company Founded",
-        desc: "Wozoli Contractors established in Harare with a vision to transform Zimbabwe's construction landscape.",
-      },
-      {
-        year: "2012",
-        title: "First Major Contract",
-        desc: "Awarded our first government infrastructure project, marking a significant milestone in growth.",
-      },
-      {
-        year: "2016",
-        title: "50th Project Milestone",
-        desc: "Completed 50 construction projects across Zimbabwe, earning a reputation for excellence.",
-      },
-      {
-        year: "2019",
-        title: "Expanded Services",
-        desc: "Added civil engineering and project management divisions to offer comprehensive solutions.",
-      },
-      {
-        year: "2022",
-        title: "Regional Recognition",
-        desc: "Recognized as one of the top construction firms in Southern Africa for quality and innovation.",
-      },
-      {
-        year: "2024",
-        title: "150+ Projects",
-        desc: "Surpassed 150 completed projects with continued growth and expansion across Zimbabwe.",
-      },
+      { year: "2008", title: "Firm Established", desc: "Diza Attorneys opens its doors in Harare with a focus on litigation and commercial law." },
+      { year: "2012", title: "Corporate Division", desc: "Launched dedicated corporate law division to serve growing business client base." },
+      { year: "2015", title: "Conveyancing Practice", desc: "Added property law and conveyancing, becoming a full-service commercial law firm." },
+      { year: "2018", title: "1,000th Case", desc: "Surpassed 1,000 successfully handled legal matters across all practice areas." },
+      { year: "2021", title: "Digital Transformation", desc: "Implemented legal technology platform for faster case management and client communication." },
+      { year: "2024", title: "2,000+ Cases", desc: "Celebrated handling over 2,000 legal matters with a 95% success rate maintained." },
     ],
-    ctaTitle: "Let Us Build Your Vision",
-    ctaSubtitle:
-      "Partner with us for your next construction project and experience the difference that quality makes.",
-    ctaCta: "Start a Conversation",
+    ctaTitle: "Need Legal Advice?",
+    ctaSubtitle: "Book a confidential consultation with one of our experienced attorneys.",
+    ctaCta: "Book a Consultation",
   },
 
   // ====== SERVICES PAGE ======
   services: {
-    heroTitle: [
-      { text: "Comprehensive " },
-      { text: "Construction", highlight: true },
-      { text: " Solutions" },
-    ],
-    heroSubtitle:
-      "Six core service areas designed to cover every aspect of your construction needs. From initial planning to final handover, we have you covered.",
+    heroTitle: [{ text: "Our " }, { text: "Practice", highlight: true }, { text: " Areas" }],
+    heroSubtitle: "Six specialized practice areas covering every aspect of civil, commercial, and personal legal needs for individuals and businesses in Zimbabwe.",
     items: [
-      {
-        iconName: "Buildings",
-        title: "General Construction",
-        slug: "general-construction",
-        image:
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900",
-        desc: "From commercial complexes to residential buildings, we deliver complete construction solutions that stand the test of time. Our general construction services encompass every phase of the building process.",
-        features: [
-          "Commercial & residential building construction",
-          "Industrial facility development",
-          "Foundations and structural frameworks",
-          "Interior and exterior finishing",
-          "Quality assurance at every stage",
-          "Compliance with local building codes",
-        ],
-      },
-      {
-        iconName: "HardHat",
-        title: "Civil Engineering",
-        slug: "civil-engineering",
-        image:
-          "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900",
-        desc: "Our civil engineering team brings decades of expertise to public and private infrastructure projects. We design and build solutions that serve communities for generations.",
-        features: [
-          "Infrastructure design and planning",
-          "Water and sanitation systems",
-          "Storm water management",
-          "Site development and grading",
-          "Environmental impact assessments",
-          "Geotechnical investigations",
-        ],
-      },
-      {
-        iconName: "RoadHorizon",
-        title: "Road Construction",
-        slug: "road-construction",
-        image:
-          "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900",
-        desc: "Building the arteries of progress. Our road construction division specializes in creating durable, well-engineered road networks that connect communities and drive economic growth.",
-        features: [
-          "Highway and expressway construction",
-          "Urban road development",
-          "Rural access roads",
-          "Bridge and culvert construction",
-          "Pavement rehabilitation",
-          "Traffic management systems",
-        ],
-      },
-      {
-        iconName: "Wrench",
-        title: "Building Renovation",
-        slug: "building-renovation",
-        image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900",
-        desc: "Breathing new life into existing structures. We transform outdated buildings into modern, functional, and visually stunning spaces while preserving their structural integrity.",
-        features: [
-          "Complete building refurbishment",
-          "Structural repairs and reinforcement",
-          "Facade modernization",
-          "Interior redesign and fit-out",
-          "Energy efficiency upgrades",
-          "Heritage building restoration",
-        ],
-      },
-      {
-        iconName: "ChartLineUp",
-        title: "Project Management",
-        slug: "project-management",
-        image:
-          "https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=900",
-        desc: "End-to-end project oversight that ensures your construction project is delivered on time, within budget, and to the highest quality standards. Our experienced managers keep everything on track.",
-        features: [
-          "Project planning and scheduling",
-          "Budget management and cost control",
-          "Quality assurance programs",
-          "Risk assessment and mitigation",
-          "Stakeholder communication",
-          "Progress reporting and documentation",
-        ],
-      },
-      {
-        iconName: "Wall",
-        title: "Structural Engineering",
-        slug: "structural-engineering",
-        image:
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900",
-        desc: "Precision engineering for safe, durable constructions. Our structural engineers use advanced analysis tools to design foundations and frameworks that withstand the forces of nature.",
-        features: [
-          "Structural analysis and design",
-          "Foundation engineering",
-          "Seismic assessment",
-          "Load-bearing capacity analysis",
-          "Structural health monitoring",
-          "Retrofit design solutions",
-        ],
-      },
+      { iconName: "ShieldCheck", title: "Litigation & Dispute Resolution", slug: "litigation", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900", desc: "Aggressive representation in civil and commercial disputes. We handle matters from the Magistrates Court to the Supreme Court, as well as arbitration and mediation.", features: ["High Court and Supreme Court litigation", "Commercial dispute resolution", "Arbitration and mediation", "Debt recovery and enforcement", "Judicial review proceedings", "Urgent and interim relief applications"] },
+      { iconName: "Buildings", title: "Corporate & Commercial Law", slug: "corporate-law", image: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=900", desc: "Strategic legal counsel for businesses at every stage. From startup incorporation to complex M&A transactions, we protect your commercial interests.", features: ["Company registration and formation", "Mergers and acquisitions", "Shareholder agreements and disputes", "Corporate governance advisory", "Joint ventures and partnerships", "Regulatory compliance"] },
+      { iconName: "HardHat", title: "Property & Conveyancing", slug: "property-conveyancing", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900", desc: "End-to-end property legal services. Title deed transfers, mortgage bond registration, subdivision, and commercial leasing handled with meticulous precision.", features: ["Property transfer and registration", "Mortgage bond registration", "Subdivision and consolidation", "Commercial lease agreements", "Sectional title management", "Property due diligence"] },
+      { iconName: "Briefcase", title: "Labour & Employment Law", slug: "labour-law", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900", desc: "Comprehensive labour law advisory for employers and employees. From contract drafting to disciplinary hearings and retrenchment procedures.", features: ["Employment contract drafting", "Disciplinary and grievance procedures", "Retrenchment and restructuring", "Labour dispute arbitration", "Unfair dismissal claims", "Workplace policy development"] },
+      { iconName: "Handshake", title: "Contract Law", slug: "contract-law", image: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=900", desc: "Expert drafting, review, and negotiation of commercial contracts. We ensure your agreements are legally sound and protect your interests.", features: ["Commercial contract drafting", "Contract review and negotiation", "Supply and distribution agreements", "Service level agreements", "Non-disclosure and non-compete", "Breach of contract claims"] },
+      { iconName: "Heart", title: "Family Law", slug: "family-law", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900", desc: "Sensitive and effective legal representation in personal and family matters. Divorce, custody, maintenance, wills, and estate administration.", features: ["Divorce and separation", "Child custody and guardianship", "Maintenance claims", "Estate planning and wills", "Deceased estate administration", "Protection orders"] },
     ],
-    ctaTitle: "Need a Customized Solution?",
-    ctaSubtitle:
-      "Every project is unique. Contact us to discuss your specific requirements and let us craft a tailored construction solution.",
+    ctaTitle: "Need Specialized Legal Advice?",
+    ctaSubtitle: "Every legal matter is unique. Contact us for a confidential consultation tailored to your situation.",
   },
 
   // ====== PROJECTS PAGE ======
   projects: {
-    heroTitle: [
-      { text: "Projects That " },
-      { text: "Define", highlight: true },
-      { text: " Excellence" },
-    ],
-    heroSubtitle:
-      "Explore our portfolio of completed and ongoing projects. Each one tells a story of dedication, skill, and unwavering quality.",
-    categories: [
-      "All",
-      "Commercial",
-      "Residential",
-      "Infrastructure",
-      "Renovation",
-      "Industrial",
-    ],
+    heroTitle: [{ text: "Notable " }, { text: "Cases", highlight: true }, { text: " & Matters" }],
+    heroSubtitle: "A selection of significant legal matters and landmark cases handled by Diza Attorneys across our practice areas.",
+    categories: ["All", "Litigation", "Corporate", "Conveyancing", "Labour", "Family"],
     items: [
-      {
-        id: 1,
-        title: "Harare Business Park",
-        category: "Commercial",
-        location: "Harare CBD",
-        year: "2024",
-        image:
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800",
-        desc: "A state-of-the-art commercial complex featuring 12 floors of premium office space, ground-floor retail, and underground parking for 200 vehicles.",
-        services: [
-          "General Construction",
-          "Structural Engineering",
-          "Project Management",
-        ],
-      },
-      {
-        id: 2,
-        title: "Borrowdale Residential Estate",
-        category: "Residential",
-        location: "Borrowdale, Harare",
-        year: "2023",
-        image:
-          "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800",
-        desc: "Luxury residential development comprising 24 contemporary townhouses with premium finishes, landscaped gardens, and community amenities.",
-        services: ["General Construction", "Civil Engineering"],
-      },
-      {
-        id: 3,
-        title: "Mutare Highway Extension",
-        category: "Infrastructure",
-        location: "Harare - Mutare",
-        year: "2023",
-        image:
-          "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-        desc: "45km highway extension project including two new interchanges, drainage systems, and roadside amenities. Completed 2 weeks ahead of schedule.",
-        services: [
-          "Road Construction",
-          "Civil Engineering",
-          "Project Management",
-        ],
-      },
-      {
-        id: 4,
-        title: "Causeway Office Renovation",
-        category: "Renovation",
-        location: "Causeway, Harare",
-        year: "2024",
-        image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800",
-        desc: "Complete renovation of a 1970s office building, transforming it into a modern workspace with energy-efficient systems and contemporary design.",
-        services: ["Building Renovation", "Structural Engineering"],
-      },
-      {
-        id: 5,
-        title: "Chitungwiza Shopping Mall",
-        category: "Commercial",
-        location: "Chitungwiza",
-        year: "2022",
-        image:
-          "https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?w=800",
-        desc: "A modern retail destination with 45 shop units, food court, entertainment zone, and ample parking serving the Chitungwiza community.",
-        services: ["General Construction", "Project Management"],
-      },
-      {
-        id: 6,
-        title: "Msasa Industrial Complex",
-        category: "Industrial",
-        location: "Msasa, Harare",
-        year: "2022",
-        image:
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800",
-        desc: "Purpose-built industrial warehousing and manufacturing facility spanning 8,000 square meters with heavy-duty flooring and specialized loading docks.",
-        services: [
-          "General Construction",
-          "Structural Engineering",
-          "Civil Engineering",
-        ],
-      },
-      {
-        id: 7,
-        title: "Glen Lorne Luxury Villas",
-        category: "Residential",
-        location: "Glen Lorne, Harare",
-        year: "2023",
-        image:
-          "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800",
-        desc: "Six exclusive luxury villas with infinity pools, smart home technology, and panoramic views of the Harare skyline.",
-        services: ["General Construction", "Building Renovation"],
-      },
-      {
-        id: 8,
-        title: "Masvingo Road Rehabilitation",
-        category: "Infrastructure",
-        location: "Masvingo Province",
-        year: "2021",
-        image:
-          "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
-        desc: "Major road rehabilitation project covering 120km of provincial roads, including resurfacing, bridge repairs, and drainage improvements.",
-        services: ["Road Construction", "Civil Engineering"],
-      },
-      {
-        id: 9,
-        title: "Avondale Heritage Restoration",
-        category: "Renovation",
-        location: "Avondale, Harare",
-        year: "2024",
-        image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800",
-        desc: "Sensitive restoration of a heritage-listed colonial building, preserving original architectural features while modernizing essential systems.",
-        services: ["Building Renovation", "Structural Engineering"],
-      },
+      { id: 1, title: "Mining Rights Constitutional Challenge", category: "Litigation", location: "Supreme Court", year: "2024", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800", desc: "Successfully challenged the revocation of mining rights for a major platinum producer. The Supreme Court ruling set a precedent for mining sector regulatory disputes.", services: ["Litigation & Dispute Resolution"] },
+      { id: 2, title: "Technology Sector M&A", category: "Corporate", location: "Harare", year: "2024", image: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=800", desc: "Advised on the $12M acquisition of a Zimbabwean fintech company by a South African banking group. Handled due diligence, regulatory approvals, and transaction structuring.", services: ["Corporate & Commercial Law", "Contract Law"] },
+      { id: 3, title: "Borrowdale Estate Development", category: "Conveyancing", location: "Borrowdale, Harare", year: "2023", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800", desc: "Managed the conveyancing for a 48-unit residential estate development. All transfers registered within 60 days of completion, a record for the project scale.", services: ["Property & Conveyancing"] },
+      { id: 4, title: "Banking Sector Restructuring", category: "Labour", location: "Harare", year: "2023", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800", desc: "Advised a major bank on the restructuring of 3 divisions affecting 200+ employees. Ensured full Labour Act compliance with zero disputes filed.", services: ["Labour & Employment Law"] },
+      { id: 5, title: "Commercial Lease Portfolio", category: "Corporate", location: "Harare CBD", year: "2024", image: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=800", desc: "Reviewed and negotiated 35 commercial leases for a national retail chain, standardizing terms and achieving an average 15% reduction in rental escalation clauses.", services: ["Contract Law", "Property & Conveyancing"] },
+      { id: 6, title: "High-Profile Custody Matter", category: "Family", location: "Harare", year: "2024", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800", desc: "Successfully represented a parent in a complex cross-border custody dispute involving jurisdictions in Zimbabwe and the United Kingdom.", services: ["Family Law"] },
+      { id: 7, title: "Infrastructure PPP Litigation", category: "Litigation", location: "High Court", year: "2023", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800", desc: "Won a landmark $8M damages claim in a public-private partnership dispute for a construction consortium. The ruling clarified PPP contract interpretation in Zimbabwe.", services: ["Litigation & Dispute Resolution", "Contract Law"] },
+      { id: 8, title: "Agricultural Company Formation", category: "Corporate", location: "Mashonaland", year: "2022", image: "https://images.unsplash.com/photo-1507679799987-c73b1a22ee4e?w=800", desc: "Structured and registered a joint venture between Zimbabwean and Dutch agricultural companies for commercial horticulture operations.", services: ["Corporate & Commercial Law"] },
+      { id: 9, title: "Estate Administration", category: "Family", location: "Harare", year: "2023", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800", desc: "Administered a complex deceased estate worth $3M with assets in Zimbabwe and South Africa. Resolved competing claims from 6 beneficiaries through mediation.", services: ["Family Law"] },
     ],
   },
 
   // ====== REVIEWS PAGE ======
   reviews: {
-    heroTitle: [
-      { text: "What Our Clients " },
-      { text: "Say", highlight: true },
-    ],
-    heroSubtitle:
-      "Real feedback from real clients. Our rating reflects our consistent commitment to quality and customer satisfaction.",
-    ratingBreakdown: [
-      { stars: 5, count: 11 },
-      { stars: 4, count: 6 },
-      { stars: 3, count: 0 },
-      { stars: 2, count: 0 },
-      { stars: 1, count: 0 },
-    ],
+    heroTitle: [{ text: "Client " }, { text: "Testimonials", highlight: true }],
+    heroSubtitle: "Real feedback from individuals and organizations who trust Diza Attorneys with their most important legal matters.",
+    ratingBreakdown: [{ stars: 5, count: 19 }, { stars: 4, count: 7 }, { stars: 3, count: 2 }, { stars: 2, count: 0 }, { stars: 1, count: 0 }],
     items: [
-      {
-        name: "Tendai Moyo",
-        role: "Property Developer",
-        text: "Wozoli Contractors exceeded our expectations on every front. Their attention to detail and commitment to quality is unmatched in Harare. The project was completed on time and the craftsmanship is outstanding.",
-        rating: 5,
-        date: "2 months ago",
-        project: "Commercial Complex",
-      },
-      {
-        name: "Grace Chimuka",
-        role: "Business Owner",
-        text: "Professional, reliable, and innovative. They transformed our commercial property beyond what we imagined possible. The team was communicative throughout and handled every challenge with expertise.",
-        rating: 5,
-        date: "3 months ago",
-        project: "Office Renovation",
-      },
-      {
-        name: "Samuel Ndlovu",
-        role: "Government Project Coordinator",
-        text: "Their expertise in road construction is remarkable. They delivered a complex infrastructure project on time and within budget. Safety standards were impeccable throughout the project duration.",
-        rating: 4,
-        date: "4 months ago",
-        project: "Road Construction",
-      },
-      {
-        name: "Chiedza Makoni",
-        role: "Homeowner",
-        text: "We hired Wozoli Contractors to build our dream home in Borrowdale. From the initial consultation to the final handover, they were professional and attentive. Our home is everything we envisioned and more.",
-        rating: 5,
-        date: "5 months ago",
-        project: "Residential Construction",
-      },
-      {
-        name: "Blessing Mutasa",
-        role: "School Administrator",
-        text: "Wozoli built our new school block and sports facility. The quality of work is exceptional. They were respectful of the school environment and ensured minimal disruption to our students.",
-        rating: 5,
-        date: "5 months ago",
-        project: "Institutional Building",
-      },
-      {
-        name: "Peter Zvobgo",
-        role: "Retail Chain Manager",
-        text: "We have worked with Wozoli on three separate projects now. Their consistency in delivering high-quality work is what keeps us coming back. Fair pricing and excellent project management.",
-        rating: 4,
-        date: "6 months ago",
-        project: "Retail Fit-Out",
-      },
-      {
-        name: "Nyasha Gumbo",
-        role: "Real Estate Agent",
-        text: "I recommend Wozoli Contractors to all my clients. Their reputation for quality construction adds value to any property. The attention to finishing details is what sets them apart.",
-        rating: 5,
-        date: "7 months ago",
-        project: "Various Projects",
-      },
-      {
-        name: "Margaret Dube",
-        role: "Hotel Owner",
-        text: "Wozoli renovated our hotel and the results are stunning. They understood our vision for a modern yet warm aesthetic and delivered beautifully. Guests constantly compliment the new look.",
-        rating: 5,
-        date: "8 months ago",
-        project: "Hotel Renovation",
-      },
-      {
-        name: "Tawanda Mapfumo",
-        role: "Warehouse Manager",
-        text: "Solid construction work on our industrial warehouse. The structural engineering was top-notch and the building has performed excellently. Very satisfied with the durability and design.",
-        rating: 4,
-        date: "8 months ago",
-        project: "Industrial Construction",
-      },
-      {
-        name: "Rudo Chigwedere",
-        role: "Church Elder",
-        text: "Our new church building is a masterpiece thanks to Wozoli Contractors. They treated the project with the reverence it deserved and delivered a space that our congregation is proud of.",
-        rating: 5,
-        date: "9 months ago",
-        project: "Religious Building",
-      },
-      {
-        name: "Kudzai Matimba",
-        role: "NGO Director",
-        text: "Wozoli built our community clinic in a rural area. Despite the challenging location, they delivered a quality structure on time. Their commitment to community development is genuine.",
-        rating: 4,
-        date: "10 months ago",
-        project: "Healthcare Facility",
-      },
-      {
-        name: "David Mhizha",
-        role: "Civil Engineer",
-        text: "As a fellow professional in the industry, I can attest to the high standards Wozoli maintains. Their structural work is precise and their adherence to building codes is exemplary.",
-        rating: 5,
-        date: "11 months ago",
-        project: "Structural Work",
-      },
-      {
-        name: "Faith Nyamukapa",
-        role: "Restaurant Owner",
-        text: "The renovation of our restaurant was completed in just 6 weeks without a single day of delay. The quality of the interior finishing exceeded our expectations. Highly recommended.",
-        rating: 5,
-        date: "11 months ago",
-        project: "Restaurant Renovation",
-      },
-      {
-        name: "Maxwell Chirenje",
-        role: "Mining Company Director",
-        text: "Wozoli constructed our mining camp facilities in challenging terrain. Their adaptability and problem-solving skills were impressive. A reliable contractor for demanding projects.",
-        rating: 4,
-        date: "1 year ago",
-        project: "Mining Infrastructure",
-      },
-      {
-        name: "Tariro Banda",
-        role: "Apartment Complex Owner",
-        text: "Our 48-unit apartment complex was a major undertaking and Wozoli handled it with professionalism from start to finish. The project management was flawless and communication was excellent.",
-        rating: 5,
-        date: "1 year ago",
-        project: "Multi-Unit Residential",
-      },
-      {
-        name: "Simba Chidyausiku",
-        role: "Logistics Company CEO",
-        text: "Wozoli built our distribution center and it has served us well. The floor load capacity is exactly as specified and the building layout optimizes our operations perfectly.",
-        rating: 4,
-        date: "1 year ago",
-        project: "Distribution Center",
-      },
-      {
-        name: "Agnes Manyika",
-        role: "Property Manager",
-        text: "I have seen many construction companies operate in Harare, and Wozoli stands out for their integrity and work ethic. They deliver what they promise, every single time.",
-        rating: 5,
-        date: "1 year ago",
-        project: "Multiple Projects",
-      },
+      { name: "Tendai Chirwa", role: "CEO, Masimba Holdings", text: "Diza Attorneys handled our complex M&A transaction flawlessly. Their corporate law expertise and attention to detail saved us from potential liabilities worth millions. True strategic partners.", rating: 5, date: "1 month ago", project: "Mergers & Acquisitions" },
+      { name: "Grace Nyoni", role: "Property Developer", text: "Every property transfer I handle goes through Diza. They are thorough, fast, and their conveyancing team never misses a deadline. Over 100 transfers completed without a single issue.", rating: 5, date: "2 months ago", project: "Conveyancing" },
+      { name: "Maxwell Gumbo", role: "HR Director, Delta Beverages", text: "Their labour law advice has been invaluable during our restructuring. Professional, pragmatic, and always focused on solutions. Zero disputes from 200+ affected employees.", rating: 4, date: "3 months ago", project: "Labour Restructuring" },
+      { name: "Rudo Mapfumo", role: "Small Business Owner", text: "I was terrified of the legal process when a former partner tried to dissolve our business unfairly. Diza Attorneys fought for my rights and the outcome was far better than I hoped.", rating: 5, date: "4 months ago", project: "Commercial Dispute" },
+      { name: "Peter Chirenje", role: "Mining Director, Zimplats", text: "When our mining rights were threatened by a regulatory change, Diza took our case to the Supreme Court and won. Their litigation team is formidable. I would not use anyone else.", rating: 5, date: "5 months ago", project: "Constitutional Litigation" },
+      { name: "Sandra Moyo", role: "Estate Agent, Pam Golding", text: "As a real estate agent, I recommend Diza Attorneys to every buyer and seller. Their conveyancing is efficient, their communication is excellent, and transfers are always on time.", rating: 5, date: "6 months ago", project: "Property Transfer" },
+      { name: "Tinashe Banda", role: "IT Company CEO", text: "Diza drafted all our employment contracts and company policies. When we had our first disciplinary matter, we were fully protected because the documentation was airtight.", rating: 4, date: "7 months ago", project: "Employment Law" },
+      { name: "Chipo Mukwena", role: "NGO Director", text: "The estate administration for my late father was handled with incredible sensitivity and efficiency. Multiple properties across two countries were resolved within 6 months.", rating: 5, date: "8 months ago", project: "Estate Administration" },
+      { name: "Simba Dube", role: "Commercial Farmer", text: "Diza structured our joint venture with an international partner. The agreement they drafted protected our interests perfectly when a disagreement arose two years later.", rating: 5, date: "9 months ago", project: "Joint Venture" },
+      { name: "Nyasha Matimba", role: "Bank Manager, CBZ", text: "We use Diza for all our mortgage bond registrations. Their turnaround time is consistently the fastest in the market. Reliable, accurate, and professional every time.", rating: 4, date: "10 months ago", project: "Bond Registration" },
+      { name: "Faith Chirwa", role: "Divorce Client", text: "Going through a divorce is terrible, but Diza made it bearable. They fought hard for a fair settlement while being genuinely compassionate about what I was going through.", rating: 5, date: "11 months ago", project: "Divorce" },
+      { name: "Blessing Moyo", role: "Retail Chain CEO", text: "Diza reviewed and renegotiated 35 commercial leases for our stores. They saved us hundreds of thousands in improved terms. Their contract negotiation skills are exceptional.", rating: 5, date: "1 year ago", project: "Commercial Leases" },
     ],
-    ctaTitle: "Ready to Experience the Difference?",
-    ctaSubtitle:
-      "Join our growing list of satisfied clients. Contact us today to discuss your construction project.",
-    ctaCta: "Get Started Today",
-    ctaWhatsappText:
-      "Hello, I saw your reviews and would like to discuss a project.",
+    ctaTitle: "Ready for Legal Representation That Delivers?",
+    ctaSubtitle: "Join the individuals and businesses who trust Diza Attorneys with their most important legal matters.",
+    ctaCta: "Book a Consultation",
+    ctaWhatsappText: "Hello, I read your client testimonials and would like to book a consultation.",
   },
 
-  // ====== CONTACT PAGE ======
   contact: {
-    heroTitle: [
-      { text: "Let's Start " },
-      { text: "Building", highlight: true },
-      { text: " Together" },
-    ],
-    heroSubtitle:
-      "Have a construction project in mind? We would love to hear from you. Reach out via phone, email, WhatsApp, or fill in the form below.",
+    heroTitle: [{ text: "Let's " }, { text: "Talk", highlight: true }, { text: " Law" }],
+    heroSubtitle: "Have a legal matter to discuss? Book a confidential consultation with one of our experienced attorneys.",
     formTitle: "Send Us a Message",
-    formSubtitle:
-      "Fill in the form and choose how you'd like to send it.",
+    formSubtitle: "Fill in the form and choose how you'd like to send it.",
   },
 
-  // ====== CAREERS PAGE ======
   careers: {
-    heroTitle: [
-      { text: "Build Your " },
-      { text: "Career", highlight: true },
-      { text: " With Us" },
-    ],
-    heroSubtitle:
-      "Join a team of passionate professionals who are building Zimbabwe's future. We offer rewarding careers with growth opportunities, competitive benefits, and a supportive culture.",
-    heroImage:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920",
-    cultureTitle: "Why Work Here?",
+    heroTitle: [{ text: "Build Your " }, { text: "Legal", highlight: true }, { text: " Career" }],
+    heroSubtitle: "Join a team of skilled attorneys and legal professionals at one of Harare's most respected law firms.",
+    heroImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920",
+    cultureTitle: "Why Practice With Us?",
     cultureItems: [
-      {
-        iconName: "Users",
-        title: "Collaborative Environment",
-        desc: "Work alongside talented professionals who support and challenge each other.",
-      },
-      {
-        iconName: "Rocket",
-        title: "Growth Opportunities",
-        desc: "Clear career progression paths with mentorship from industry leaders.",
-      },
-      {
-        iconName: "ShieldCheck",
-        title: "Safety Culture",
-        desc: "A workplace where safety is not just a rule but a deeply held value.",
-      },
+      { iconName: "Users", title: "Mentorship", desc: "Work alongside senior attorneys who invest in your professional growth and legal expertise." },
+      { iconName: "Rocket", title: "Career Progression", desc: "Clear partnership track with defined milestones for ambitious legal professionals." },
+      { iconName: "ShieldCheck", title: "Ethical Practice", desc: "A firm culture built on integrity where doing the right thing is always the first priority." },
     ],
-    cultureImage:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1400",
-    cultureImageAlt:
-      "Team working together on a construction site",
-    cultureTagline: "More Than a Job. A Mission.",
-    cultureTaglineDesc:
-      "Every day, our team comes together with a shared purpose: to build structures that improve lives and shape communities.",
+    cultureImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1400",
+    cultureImageAlt: "Diza Attorneys team in the office",
+    cultureTagline: "More Than a Job. A Calling.",
+    cultureTaglineDesc: "Every case we take on is an opportunity to make a difference. Our attorneys are driven by a genuine commitment to justice.",
     benefits: [
-      {
-        iconName: "CurrencyDollar",
-        title: "Competitive Salary",
-        desc: "Industry-leading compensation packages with performance bonuses.",
-      },
-      {
-        iconName: "FirstAid",
-        title: "Health Coverage",
-        desc: "Comprehensive medical aid for you and your immediate family.",
-      },
-      {
-        iconName: "GraduationCap",
-        title: "Professional Development",
-        desc: "Sponsorship for certifications, courses, and industry conferences.",
-      },
-      {
-        iconName: "Car",
-        title: "Transport Allowance",
-        desc: "Monthly transport allowance or company vehicle for senior roles.",
-      },
-      {
-        iconName: "Heart",
-        title: "Work-Life Balance",
-        desc: "Generous leave policies and flexible working arrangements.",
-      },
-      {
-        iconName: "ShieldCheck",
-        title: "Safety Equipment",
-        desc: "All necessary PPE and safety gear provided at no cost.",
-      },
+      { iconName: "CurrencyDollar", title: "Competitive Salary", desc: "Market-leading remuneration with performance bonuses tied to billing targets." },
+      { iconName: "FirstAid", title: "Medical Aid", desc: "Comprehensive medical cover for you and your immediate family." },
+      { iconName: "GraduationCap", title: "Professional Development", desc: "Sponsored CLE courses, bar exam preparation, and specialist qualifications." },
+      { iconName: "Car", title: "Travel Allowance", desc: "Monthly travel allowance for all fee-earning professionals." },
+      { iconName: "Heart", title: "Work-Life Balance", desc: "Reasonable billable targets and flexible arrangements for senior staff." },
+      { iconName: "ShieldCheck", title: "Professional Indemnity", desc: "Full professional indemnity insurance coverage for all practicing attorneys." },
     ],
     positions: [
-      {
-        id: 1,
-        title: "Senior Civil Engineer",
-        department: "Engineering",
-        type: "Full-Time",
-        location: "Harare",
-        description:
-          "We are seeking an experienced civil engineer to lead infrastructure projects. The ideal candidate has 8+ years of experience in civil engineering with expertise in road and bridge construction.",
-        requirements: [
-          "Bachelor's degree in Civil Engineering",
-          "8+ years of experience in construction",
-          "Professional registration with ZIE",
-          "Project management experience",
-          "Strong leadership and communication skills",
-        ],
-      },
-      {
-        id: 2,
-        title: "Project Manager",
-        department: "Management",
-        type: "Full-Time",
-        location: "Harare",
-        description:
-          "Join our project management team to oversee major construction projects from inception to completion. You will coordinate teams, manage budgets, and ensure timely delivery.",
-        requirements: [
-          "Degree in Construction Management or related field",
-          "5+ years of project management experience",
-          "PMP certification preferred",
-          "Strong budgeting and scheduling skills",
-          "Experience with construction management software",
-        ],
-      },
-      {
-        id: 3,
-        title: "Structural Engineer",
-        department: "Engineering",
-        type: "Full-Time",
-        location: "Harare",
-        description:
-          "We need a structural engineer to design and analyze building structures for our construction projects. Expertise in reinforced concrete and steel structures is essential.",
-        requirements: [
-          "Bachelor's or Master's degree in Structural Engineering",
-          "5+ years of structural design experience",
-          "Proficiency in AutoCAD, SAP2000, or similar",
-          "Knowledge of local building codes",
-          "Strong analytical and problem-solving skills",
-        ],
-      },
-      {
-        id: 4,
-        title: "Quantity Surveyor",
-        department: "Commercial",
-        type: "Full-Time",
-        location: "Harare",
-        description:
-          "We are looking for a qualified quantity surveyor to manage costs on our construction projects. You will handle bill of quantities, valuations, and cost reporting.",
-        requirements: [
-          "Degree in Quantity Surveying",
-          "3+ years of experience in construction QS",
-          "Proficiency in measurement and valuation",
-          "Knowledge of contract administration",
-          "Excellent attention to detail",
-        ],
-      },
-      {
-        id: 5,
-        title: "Site Foreman",
-        department: "Operations",
-        type: "Full-Time",
-        location: "Various Sites",
-        description:
-          "We need experienced site foremen to supervise construction activities on our various project sites. You will ensure work quality, safety compliance, and team coordination.",
-        requirements: [
-          "National Diploma in Building/Construction",
-          "5+ years of site supervision experience",
-          "Strong knowledge of construction methods",
-          "Health and safety certification",
-          "Ability to read and interpret drawings",
-        ],
-      },
-      {
-        id: 6,
-        title: "Graduate Engineer (Internship)",
-        department: "Engineering",
-        type: "Internship",
-        location: "Harare",
-        description:
-          "An exciting opportunity for recent engineering graduates to gain hands-on experience in construction. You will work alongside senior engineers on real projects.",
-        requirements: [
-          "Recent graduate in Civil/Structural Engineering",
-          "Strong academic record",
-          "Eagerness to learn and grow",
-          "Basic knowledge of construction software",
-          "Valid driver's license is an advantage",
-        ],
-      },
+      { id: 1, title: "Senior Associate, Litigation", department: "Litigation", type: "Full-Time", location: "Harare", description: "Experienced litigation attorney to handle complex commercial disputes in the High Court and Supreme Court.", requirements: ["LLB degree and admission to practice", "5+ years litigation experience", "High Court trial experience essential", "Strong legal research and drafting", "Client management skills"] },
+      { id: 2, title: "Associate, Corporate Law", department: "Corporate", type: "Full-Time", location: "Harare", description: "Corporate attorney to handle M&A, company formations, and commercial agreements.", requirements: ["LLB degree and admission to practice", "3+ years corporate law experience", "M&A transaction experience preferred", "Strong contract drafting skills", "Attention to detail"] },
+      { id: 3, title: "Conveyancer", department: "Conveyancing", type: "Full-Time", location: "Harare", description: "Qualified conveyancer to handle property transfers, bond registrations, and related matters.", requirements: ["LLB with conveyancing endorsement", "3+ years conveyancing experience", "Deeds Office procedure knowledge", "High volume work capacity", "Excellent organizational skills"] },
+      { id: 4, title: "Candidate Attorney", department: "General", type: "Articles", location: "Harare", description: "Two-year articles of clerkship program with exposure to all practice areas under senior attorney mentorship.", requirements: ["LLB degree (completed or final year)", "Strong academic record", "Legal writing samples required", "Research and analytical skills", "Professional demeanor"] },
     ],
     generalApplicationTitle: "Don't See the Right Role?",
-    generalApplicationSubtitle:
-      "We are always looking for talented individuals. Send us your CV and we will keep you in mind for future opportunities.",
+    generalApplicationSubtitle: "We are always open to hearing from talented legal professionals. Send us your CV.",
     generalApplicationCta: "Send Your CV",
   },
 
-  // ====== FOOTER ======
   footer: {
-    description:
-      "Building Zimbabwe's future with excellence, integrity, and innovation. Trusted by communities and businesses since our founding.",
-    copyright: "Wozoli Contractors (Pvt) Ltd",
+    description: "Justice. Integrity. Results. Trusted by individuals and businesses across Zimbabwe for over 16 years.",
+    copyright: "Diza Attorneys at Law",
   },
 };
 
